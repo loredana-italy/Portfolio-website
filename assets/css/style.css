@@ -90,6 +90,7 @@ b {
 nav ul {
     flex: 1;
     text-align: right;
+    height: 100vh;
 }
 
 nav ul li {
@@ -168,10 +169,6 @@ nav ul li a:hover::after {
 #icon:hover {
     color: #ff004f;
     transform: translateY(-5px);
-}
-
-#sidemenu{
-    height: 100vh;
 }
 
 
