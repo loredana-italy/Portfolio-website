@@ -170,6 +170,10 @@ nav ul li a:hover::after {
     transform: translateY(-5px);
 }
 
+#sidemenu{
+    height: 100vh;
+}
+
 
 /* img in mov */
 
