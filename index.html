@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta-http-equiv="keywords" content="ux/ui design, web designer, web developer, app design">
+    <meta property="og:title" content="Loredana Russo - Personal Portfolio Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="assets/img/Immagine.png" />
+    <meta property="og:image:alt" content="Loredana Russo Portofolio Preview" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="👋 Hello! I’m Loredana, a UX/UI Designer and Web Developer. Find out more..."/>
+    <title>Loredana Russo - Personal Portfolio Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="worksuxui.html">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/8d622988b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav class="nav-header">
+                    <div class="logo"> 
+                        <a href="index.html"><span class="highlight">L</span>O<b>R</b>EDANA<b>.</b></a>
+                    </div>
+                    <ul id="sidemenu">
+                        <li><a href="#header"  onclick="opentab(event, 'header')">Home</a></li>
+                        <li><a href="#about" onclick="opentab(event, 'about')">About</a></li>
+                        <li><a href="#services" onclick="opentab(event, 'services')">Services</a></li>
+                        <li><a href="#portfolio" onclick="opentab(event, 'portfolio')">Portfolio</a></li>
+                        <li><a href="#contact" onclick="opentab(event, 'contact')">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <img src="assets/img/sun.png" id="icon">
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-text">
+                    <div class="cols cols0">
+                        <span class="topline">Hello</span>
+                        <h1>I'm <span class="multiText"></span></h1>
+                        <p>Welcome to my personal website!</p> 
+                        <p>Step into my world and explore this digital home where my passions, creativity, and experiences come together. I'm thrilled to share my journey with you!</p>
+                        
+                    </div>
+                </div>
+
+                <!-- img lat mov -->
+                <div class="img-box">
+                    <img src="assets/img/output-onlinepngtools.png" class="back-img" alt="profile background image">
+                    <img src="assets/img/Immagine.png" class="main-img" alt="main image profile greeting">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/img/Immagine-2.png" alt="pc work profile picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm Loredana, I love to geek out and create things that are beautiful but primarily useful for those who have to use them. I have a master's degree in Psychology and have worked in Innovation Consulting. I am attending master's programs in UX/UI Design and Front-end Development within the Start2Impact University platform.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI Design</span><br>User Research</li><li>Wireframing and Prototyping</li>
+                            <li><span>Web Development</span><br>Development Web Interfaces</li>
+                            <li><span>App Design</span><br>Designing App Interfaces IOS/Android</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>Junior Project Manager - EIH</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Master's program Front-End Development - Start2Impact University</li>
+                            <li><span>2023 - Current</span><br>Master's program UX/UI Design - Start2Impact University</li>
+                            <li><span>2021 - 2022</span><br>Master's degree Psychology - UNIPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="cv.html" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a vel ratione impedit eum.
+                        Minus est laboriosam iure deserunt, aperiam necessitatibus. Quos laudantium a enim!</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a vel ratione impedit eum.
+                        Minus est laboriosam iure deserunt, aperiam necessitatibus. Quos laudantium a enim!</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a vel ratione impedit eum.
+                        Minus est laboriosam iure deserunt, aperiam necessitatibus. Quos laudantium a enim!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/img/work-2.png" alt="ux/ui design works">
+                    <div class="layer">
+                        <h3>UX/UI Design Works</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos exercitationem impedit
+                            dolorem eaque ipsam.</p>
+                        <a href="worksuxui.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/img/work-3.png" alt="web development works">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos exercitationem impedit
+                            dolorem eaque ipsam.</p>
+                        <a href="workdevelopment.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/img/work-1.png" alt="app design works">
+                    <div class="layer">
+                        <h3>App Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quos exercitationem impedit
+                            dolorem eaque ipsam.</p>
+                        <a href="workappdesign.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/loredana-russo/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ux.ui_loredana/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/loredana-italy" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="assets/img/CV.pdf" target="_blank" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mayzroeq" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyp">Copyright © 2023 Loredana Russo. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+<!-- prima -->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+    <!-- menu nav lat mobile -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+      
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+      
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+      
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+      
+        function opentab(event, tabname) {
+          for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+          }
+          for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+          }
+      
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+          closemenu(); //Close the side menu when a section is selected
+        }
+      </script>
+
+
+<!-- dark/light theme -->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("light-theme");
+            if (document.body.classList.contains("light-theme")) {
+                icon.src = "assets/img/moon.png";
+            } else {
+                icon.src = "assets/img/sun.png";
+            }
+        }
+
+    </script>
+
+<!-- header mov text-->
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["UX/UI Designer", "Web Developer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+        })
+    </script>
+
+</body>
+
+</html>

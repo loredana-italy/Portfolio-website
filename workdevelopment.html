@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta-http-equiv="keywords" content="ux/ui design, web designer, web developer, app design">
+    <meta property="og:title" content="Loredana Russo - Personal Portfolio Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="assets/img/Immagine.png" />
+    <meta property="og:image:alt" content="Loredana Russo Portofolio Preview" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="👋 Hello! I’m Loredana, a UX/UI Designer and Web Developer. Find out more..."/>
+    <title>Loredana Russo - Personal Portfolio Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/8d622988b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header-2">
+        <div id="header">
+            <div class="container">
+                <nav class="nav-header">
+                    <div class="logo">
+                        <a href="index.html"><span class="highlight">L</span>O<b>R</b>EDANA<b>.</b></a>
+                    </div>
+                    <ul id="sidemenu">
+                        <li><a href="#header" onclick="opentab(event, 'header')">Home</a></li>
+                        <li><a href="#about" onclick="opentab(event, 'about')">About</a></li>
+                        <li><a href="#services" onclick="opentab(event, 'services')">Services</a></li>
+                        <li><a href="#portfolio" onclick="opentab(event, 'portfolio')">Portfolio</a></li>
+                        <li><a href="#contact" onclick="opentab(event, 'contact')">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <img src="assets/img/sun.png" id="icon">
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+    
+    </header>
+
+    <!-- project section -->
+    <div id="services-2">
+        <div class="container">
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Work in progress</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a vel ratione impedit eum.
+                        Minus est laboriosam iure deserunt, aperiam necessitatibus. Quos laudantium a enim!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Work in progress</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a vel ratione impedit eum.
+                        Minus est laboriosam iure deserunt, aperiam necessitatibus. Quos laudantium a enim!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Work in progress</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a vel ratione impedit eum.
+                        Minus est laboriosam iure deserunt, aperiam necessitatibus. Quos laudantium a enim!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/loredana-russo/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ux.ui_loredana/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/loredana-italy" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="assets/img/CV.pdf" target="_blank" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mayzroeq" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyp">Copyright © 2023 Loredana Russo. All rights reserved.</p>
+        </div>
+    </div>
