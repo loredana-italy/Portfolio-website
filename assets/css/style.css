@@ -565,14 +565,9 @@ nav .fa-solid {
 /* laptop view */
 
 @media (max-width: 1024px) {
-    .nav-header {
-        width: 90%;
-        height: 100px;
-    }
-    
     .img-box {
-        width: 40%;
-        height: 80%;
+        width: 30%;
+        height: 60%;
         position: absolute;
         bottom: 0;
         right: 100px;
