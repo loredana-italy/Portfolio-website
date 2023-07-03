@@ -100,3 +100,66 @@
             <p class="copyp">Copyright © 2023 Loredana Russo. All rights reserved.</p>
         </div>
     </div>
+
+        <!-- JAVASCRIPT -->
+
+    <!-- menu nav lat mobile -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+      
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+      
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+      
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+      
+        function opentab(event, tabname) {
+          for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+          }
+          for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+          }
+      
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+          closemenu(); //Close the side menu when a section is selected
+        }
+      </script>
+
+
+<!-- dark/light theme -->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("light-theme");
+            if (document.body.classList.contains("light-theme")) {
+                icon.src = "assets/img/moon.png";
+            } else {
+                icon.src = "assets/img/sun.png";
+            }
+        }
+
+    </script>
+
+<!-- header mov text-->
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["UX/UI Designer", "Web Developer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+        })
+    </script>
+
+</body>
+
+</html>
