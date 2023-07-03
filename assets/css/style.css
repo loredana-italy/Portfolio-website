@@ -562,26 +562,6 @@ nav .fa-solid {
     margin: 100px 30px;
 }
 
-/* laptop view */
-
-/* @media (max-width: 1024px) {   
-    .img-box {
-        width: 40%;
-        height: 70%;
-        position: absolute;
-        bottom: 0;
-        right: 100px;
-    }
-
-    .header-text h1 {
-        font-size: 40px;
-    }
-
-    .header-text p {
-        font-size: 18px;
-    }
-} */
-
 /*tablet view*/
 
 @media(max-width: 1024px) {
