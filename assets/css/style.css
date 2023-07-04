@@ -304,7 +304,7 @@ nav ul li a:hover::after {
     font-size: 50px;
 }
 
-.service-list div h2 {
+.service-list div .sub-titles-2 {
     margin-bottom: 15px;
     font-size: 30px;
     font-weight: 500;
@@ -377,9 +377,10 @@ nav ul li a:hover::after {
     transition: height 0.5s;
 }
 
-.layer h3 {
+.layer .sub-title-3 {
     font-weight: 500;
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .layer a {
