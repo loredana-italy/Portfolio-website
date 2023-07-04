@@ -544,20 +544,20 @@ nav .fa-solid {
     
 }
 
-.card p{
+.card p {
     font-size: 0.875rem;
     padding: 20px 25px;
     line-height: 1.25rem;
 }
 
-.card p::first-line{
+.card p::first-line {
     font-weight: bold;
 }
 
 /* cv */
 
-.cv{
-    font-size: 20px;
+.cv {
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
     margin: 100px 30px;
