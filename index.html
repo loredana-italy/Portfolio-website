@@ -81,10 +81,10 @@
                     <p>I'm Loredana, I love to geek out and create things that are beautiful but primarily useful for those who have to use them. I have a master's degree in Psychology and have worked in Innovation Consulting. I am attending master's programs in UX/UI Design and Front-end Development within the Start2Impact University platform.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
-                    </div>
+                        <p id="tab-skills" class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p id="tab-experience" class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p id="tab-education" class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                      </div>                      
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UX/UI Design</span><br>User Research</li><li>Wireframing and Prototyping</li>
@@ -198,7 +198,6 @@
     </div>
 
     <!-- JAVASCRIPT -->
-
     <!-- menu nav lat mobile -->
     <script>
         var sidemenu = document.getElementById("sidemenu");
@@ -215,26 +214,33 @@
         var tabcontents = document.getElementsByClassName("tab-contents");
 
         function opentab(event, tabname) {
+            var aboutTabs = document.querySelectorAll(".tab-titles #tab-skills, .tab-titles #tab-experience, .tab-titles #tab-education");
+            var aboutTabLinks = Array.from(aboutTabs);
+
             for (var i = 0; i < tablinks.length; i++) {
                 tablinks[i].classList.remove("active-link");
             }
+
             for (var i = 0; i < tabcontents.length; i++) {
                 tabcontents[i].classList.remove("active-tab");
             }
 
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
-            closemenu(); //Close the side menu when a section is selected
 
-            // skills.classList.add("active-tab");
+            // Aggiungi o rimuovi la classe "active-link" per mantenere visibile il testo delle tab nella sezione "About"
+            aboutTabLinks.forEach(function (tab) {
+                if (tab.classList.contains("active-link") && tabname !== "about") {
+                    tab.classList.remove("active-link");
+                } else if (!tab.classList.contains("active-link") && tabname === "about") {
+                    tab.classList.add("active-link");
+                }
+            });
+
+            closemenu(); // Chiude il menu laterale quando viene selezionata una sezione
         }
 
-        window.addEventListener("DOMContentLoaded", function () {
-            skillsTab.classList.add("active-link");
-        });
-
     </script>
-
 
 <!-- dark/light theme -->
     <script>
